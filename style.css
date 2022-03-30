@@ -10,6 +10,7 @@ body {
     align-items: center;
     justify-content: center;
     background: linear-gradient(220.55deg, #0e2c5e 0%, #000000 100%);
+    position: relative;
 
 }
 
@@ -17,9 +18,18 @@ body {
     width: 854px;
     height: 480px;
     border-radius: 0.7rem;
-    transition: .5s;
+    transition: .8s;
+    position: absolute;
+    
 }
 
 #vidBrunno:hover {
     box-shadow: 0px 0px 85px 20px #3c8aff;
+}
+
+.controle{
+    background-color: red;
+    width: 854px;
+    height: 480px;
+    /* position: absolute; */
 }
