@@ -1,0 +1,18 @@
+body {
+    margin: 0px;
+}
+
+.videoSect {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(220.55deg, #0E2C5E 0%, #000000 100%);
+}
+
+#vidBrunno {
+    width: 854px;
+    height: 480px;
+}
