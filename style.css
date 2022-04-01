@@ -6,7 +6,7 @@ body {
     width: 100vw;
     height: 100vh;
     display: flex;
-    flex-direction: row;
+    flex-direction:column;
     align-items: center;
     justify-content: center;
     background: linear-gradient(220.55deg, #0e2c5e 0%, #000000 100%);
@@ -15,12 +15,9 @@ body {
 }
 
 #vidBrunno {
-    width: 854px;
-    height: 480px;
+    width: 70%;
     border-radius: 0.7rem;
     transition: .8s;
-    position: absolute;
-    
 }
 
 #vidBrunno:hover {
@@ -29,7 +26,12 @@ body {
 
 .controle{
     background-color: red;
-    width: 854px;
-    height: 480px;
-    /* position: absolute; */
+    width: 70%;
+    height: 6%;
+    border-radius: 0 0 0.7rem 0.7rem;
+    position: absolute;
+    text-align: center;
 }
+/* .btn{
+  
+} */
