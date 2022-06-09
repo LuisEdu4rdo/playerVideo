@@ -1,4 +1,17 @@
 let vidBrunno = document.getElementById("vidBrunno");
+let playPause = document.getElementById("playPause");
+
+// //mudar botão play/pause
+
+// function playPause () {
+//     if(vidBrunno.paused){
+//         vidBrunno.play();
+//         playPause.src = "/assets/button/pause.svg"
+//     }else{
+//         vidBrunno.pause();
+//         playPause.src = "/assets/button/play.svg"
+//     }
+// }
 
 function recarregar() {
     vidBrunno.load();
@@ -22,9 +35,11 @@ function avancar() {
 }
 
 function mutar() {
-
+   vidBrunno.muted = true;    
 }
 
 function aumentarTela() {
 
 }
+
+
