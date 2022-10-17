@@ -32,7 +32,7 @@ function pause() {
 
 function avancar() {
     vidBrunno.currentTime += 15;
-}0
+}
 
 function mutar() {
    vidBrunno.muted = true;    
