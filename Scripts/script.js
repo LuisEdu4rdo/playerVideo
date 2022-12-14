@@ -1,8 +1,11 @@
 let vidBrunno = document.getElementById("vidBrunno");
-let playPause = document.getElementById("playPause-btn");
+let playPause = document.getElementById("playPause");
+let controle = document.getElementsByClassName("controle");
 
 // //mudar botão play/pause
-
+vidBrunno.addEventListener('playing', function(){
+    playPause.src ='./'
+})
 
 // video.addEventListener('playing', function(){
 //     playPause.src = "./Assets/icons/pause.png"
