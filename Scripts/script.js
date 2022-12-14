@@ -3,21 +3,23 @@ let playPause = document.getElementById("playPause");
 let controle = document.getElementsByClassName("controle");
 
 // //mudar botão play/pause
-vidBrunno.addEventListener('playing', function(){
-    playPause.src ='./'
-})
+
 
 // video.addEventListener('playing', function(){
 //     playPause.src = "./Assets/icons/pause.png"
 //   })
+vidBrunno.addEventListener('playing', function(){
+    playPause.src="/assets/button/pause.svg"
+})
   
 //   video.addEventListener('pause', function(){
 //     playPause.src = "./Assets/icons/play.png"
 //   })
-  
+vidBrunno.addEventListener('pause', function(){
+    playPause.src="/assets/button/play.svg"
+})  
 //   video.addEventListener('click', playP)
-
-// playPause.addEventListener('click', playP)
+vidBrunno.addEventListener('click', playPauseBtn)
 
 // function playP(){
 //   if(video.paused) {
