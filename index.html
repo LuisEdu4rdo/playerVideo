@@ -16,19 +16,21 @@
     <video id="vidBrunno" src="/assets/brunninho_da_Guitarra.mp4"></video>
 
     <div class="controle">
-      
+
       <div class="playPause-btn">
-        <img id="playPause" src="/assets/button/play.svg">
-        <!-- estava na imagem a cima class="btn" onclick="play()" -->
-        <!-- <img  class="btn" onclick="pause()" src="/assets/button/pause.svg"> -->
+        <img class = "btn" id="playPause" onclick="playPauseBtn()" src="/assets/button/play.svg">
       </div>
 
       <img class="btn" onclick="recarregar()" src="/assets/button/refresh-cw.svg">
+      
       <img class="btn" onclick="retroceder()" src="/assets/button/rewind.svg">
 
-
       <img class="btn" onclick="avancar()" src="/assets/button/fast-forward.svg">
-      <img class="btn" onclick="mutar()" src="/assets/button/volume-x.svg">
+      
+      <img class="btn" id="mute" onclick="mutar()" src="/assets/button/volume-x.svg">
+      
+      <img class="btn" id="unmute" onclick="desmutar()" src="/assets/button/volume-2.svg">
+      
       <img class="btn" onclick="aumentarTela()" src="/assets/button/maximize.svg">
 
     </div>

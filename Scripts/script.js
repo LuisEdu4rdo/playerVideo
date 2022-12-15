@@ -1,35 +1,28 @@
 let vidBrunno = document.getElementById("vidBrunno");
 let playPause = document.getElementById("playPause");
-let controle = document.getElementsByClassName("controle");
+let mute = document.getElementById("mute");
+let unmute = document.getElementById("unmute");
 
-// //mudar botão play/pause
-
-
-// video.addEventListener('playing', function(){
-//     playPause.src = "./Assets/icons/pause.png"
-//   })
-vidBrunno.addEventListener('playing', function(){
-    playPause.src="/assets/button/pause.svg"
+vidBrunno.addEventListener('playing', function () {
+    playPause.src = "/assets/button/pause.svg"
 })
-  
-//   video.addEventListener('pause', function(){
-//     playPause.src = "./Assets/icons/play.png"
-//   })
-vidBrunno.addEventListener('pause', function(){
-    playPause.src="/assets/button/play.svg"
-})  
-//   video.addEventListener('click', playP)
+
+vidBrunno.addEventListener('pause', function () {
+    playPause.src = "/assets/button/play.svg"
+})
+
 vidBrunno.addEventListener('click', playPauseBtn)
 
-// function playP(){
-//   if(video.paused) {
-//     video.play()
-//     playPause.src = "./Assets/icons/pause.png"
-//   } else {
-//     video.pause()
-//     playPause.src = "./Assets/icons/play.png"
-//   }
-// }
+function playPauseBtn() {
+    if (vidBrunno.paused) {
+        vidBrunno.play()
+        playPause.src = "/assets/button/pause.svg"
+    }
+    else {
+        vidBrunno.pause()
+        playPause.src = "/assets/button/play.svg"
+    }
+}
 
 function recarregar() {
     vidBrunno.load();
@@ -40,24 +33,18 @@ function retroceder() {
     vidBrunno.currentTime -= 15;
 }
 
-function play() {
-    vidBrunno.play();
-}
-
-function pause() {
-    vidBrunno.pause();
-}
-
 function avancar() {
     vidBrunno.currentTime += 15;
+}
+
+function aumentarTela() {
+   
 }
 
 function mutar() {
     vidBrunno.muted = true;
 }
 
-function aumentarTela() {
-
+function desmutar() {
+    vidBrunno.muted = false;
 }
-
-
